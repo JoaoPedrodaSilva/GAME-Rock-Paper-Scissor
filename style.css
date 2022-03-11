@@ -16,7 +16,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 600px;
+    width: 700px;
     height: 700px;
     border: solid 3px;
     border-radius: 5%;
@@ -163,25 +163,29 @@ body {
             border-radius: 5%;
         }
 
-@media (max-width: 780px) {
+@media (max-width: 992px) {
     #container {
-        width: 500px;
-        height: 625px;
+        transform: scale(0.8);
+    }
+
+    html {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 768px) {
+    #container {
+        transform: scale(0.6);
+    }
+}
+
+@media (max-width: 576px) {
+    #container {
+        transform: scale(0.5);
     }
 
     html {
         font-size: 7px;
-    }
-}
-
-@media (max-width: 425px) {
-    #container {
-        width: 250px;
-        height: 312px;
-    }
-
-    html {
-        font-size: 4px;
     }
 
     .choices {
