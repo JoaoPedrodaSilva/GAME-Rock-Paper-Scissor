@@ -8,48 +8,49 @@
     <title>Rock, paper and scissor game</title>
 </head>
 <body>
-
-    <div id="container">
-        <div id="screen">
-            <div id="battle-field">
-                
-                <div id="your-side">
-                    <div id="your-choice-box">
-                        <p id="you"><strong>YOU</strong></p>
-                        <p id="your-score">0</p>
+    <div class="iframe-container">
+        <div id="container">
+            <div id="screen">
+                <div id="battle-field">
+                    
+                    <div id="your-side">
+                        <div id="your-choice-box">
+                            <p id="you"><strong>YOU</strong></p>
+                            <p id="your-score">0</p>
+                        </div>
+                        <img id="your-choice-img">
                     </div>
-                    <img id="your-choice-img">
+
+                    <div id="outer-versus-box">
+                        <div id="upper-inner-versus-box">
+                        </div>
+                        <div id="lower-inner-versus-box">
+                            <p id='versus'>X</p>
+                        </div>
+                    </div>
+
+                    <div id="computers-side">
+                        <div id="computers-choice-box">
+                            <p id="computer"><strong>COMPUTER</strong></p>
+                            <p id="computer-score">0</p>
+                        </div>            
+                        <img id="computers-choice-img">
+                    </div>
                 </div>
 
-                <div id="outer-versus-box">
-                    <div id="upper-inner-versus-box">
-                    </div>
-                    <div id="lower-inner-versus-box">
-                        <p id='versus'>X</p>
-                    </div>
-                </div>
-
-                <div id="computers-side">
-                    <div id="computers-choice-box">
-                        <p id="computer"><strong>COMPUTER</strong></p>
-                        <p id="computer-score">0</p>
-                    </div>            
-                    <img id="computers-choice-img">
-                </div>
+                <div id="message-box">
+                    <strong><p id="message"></p></strong>
+                </div>    
+            </div>        
+            
+            <div id="options-box">
+                <button id='next-round-button' class="buttons">NEXT ROUND</button>
+                <button id='start-button' class="buttons">START A NEW GAME</button>  
+                <button id='end-button' class="buttons">END<br>GAME</button>        
+                <img id="rock" class="choices" src="img/rock.PNG" alt="a rock image">
+                <img id="paper" class="choices" src="img/paper.PNG" alt="a paper image">
+                <img id="scissor" class="choices" src="img/scissor.PNG" alt="a scissor image">              
             </div>
-
-            <div id="message-box">
-                <strong><p id="message"></p></strong>
-            </div>    
-        </div>        
-        
-        <div id="options-box">
-            <button id='next-round-button' class="buttons">NEXT ROUND</button>
-            <button id='start-button' class="buttons">START A NEW GAME</button>  
-            <button id='end-button' class="buttons">END<br>GAME</button>        
-            <img id="rock" class="choices" src="img/rock.PNG" alt="a rock image">
-            <img id="paper" class="choices" src="img/paper.PNG" alt="a paper image">
-            <img id="scissor" class="choices" src="img/scissor.PNG" alt="a scissor image">              
         </div>
     </div>
 
