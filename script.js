@@ -35,8 +35,8 @@ const setInitialParameters = () => {
     scissorChoiceButton.style.display = 'none'
 
     //initializing displays
-    yourChoiceDisplay.src = `img/your-initial-img.jpg`
-    computersChoiceDisplay.src = `img/computer-initial-img.jpg`
+    yourChoiceDisplay.src = `img/your-initial-img.PNG`
+    computersChoiceDisplay.src = `img/computer-initial-img.PNG`
     messageDisplay.innerHTML = null
     yourScoreDisplay.innerHTML = 0
     computerScoreDisplay.innerHTML = 0
@@ -96,9 +96,9 @@ const setComputersChoice = () => {
     else {computersChoice = 'scissor'}
 
     messageDisplay.innerHTML = 'HOLD...'
-    computersChoiceDisplay.src = `img/loading1.png`        
-    setTimeout( () => computersChoiceDisplay.src = `img/loading2.png`, 375)
-    setTimeout( () => computersChoiceDisplay.src = `img/loading3.png`, 750)
+    computersChoiceDisplay.src = `img/loading1.PNG`        
+    setTimeout( () => computersChoiceDisplay.src = `img/loading2.PNG`, 375)
+    setTimeout( () => computersChoiceDisplay.src = `img/loading3.PNG`, 750)
     setTimeout( () => computersChoiceDisplay.src = `img/${computersChoice}-big.PNG`, 1500)
 
     return computersChoice
@@ -158,8 +158,8 @@ const displayResult = () => {
 }
 
 const resetLastResult = () => {
-    yourChoiceDisplay.src = `img/your-initial-img.jpg`
-    computersChoiceDisplay.src = `img/computer-initial-img.jpg` 
+    yourChoiceDisplay.src = `img/your-initial-img.PNG`
+    computersChoiceDisplay.src = `img/computer-initial-img.PNG` 
     messageDisplay.innerHTML = 'MAKE YOUR CHOICE'
 }
 
