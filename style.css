@@ -174,7 +174,7 @@ body {
             border-radius: 5%;
         }
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
     .iframe-container {
         width: 560px;
         height: 560px;
@@ -212,5 +212,20 @@ body {
 
     .choices {
         width: 65px;
+    }
+}
+
+@media (max-width: 425px) {
+    .iframe-container {
+        width: 240px;
+        height: 240px;
+    }
+
+    html {
+        font-size: 4px;
+    }
+
+    .choices {
+        width: 45px;
     }
 }
